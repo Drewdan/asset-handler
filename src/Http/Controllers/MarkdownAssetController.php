@@ -17,7 +17,7 @@ class MarkdownAssetController extends Controller {
 	 */
 	public function store(Request $request): JsonResponse {
 		//TODO: Make this a request validator and make the options configurable
-		$request->validate(['file' => 'required']);
+		$request->validate(['file' => 'required|file']);
 
 		$srcFile = $request->file('file');
 		$filename = config('prometheus-markdown.store_original_filename')
@@ -31,7 +31,7 @@ class MarkdownAssetController extends Controller {
 				$filename
 			);
 
-//		Storage::setVisibility($file, 'public');
+		Storage::setVisibility($file, 'public');
 
 		return response()->json([
 			'url' => Storage::url($file),
