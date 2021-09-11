@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="MarkdownAssetControllerTest.testCanStoreAnAsset" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+    <CommandLine>
+      <PhpTestInterpreterSettings>
+        <option name="interpreterName" value="Ubuntu" />
+      </PhpTestInterpreterSettings>
+    </CommandLine>
+    <TestRunner class="Drewdan\AssetHandler\Tests\Feature\Http\Controllers\MarkdownAssetControllerTest" configuration_file="/home/drewdan/personal/prometheus-markdown-asset-handler/phpunit.xml" coverage_engine="PHPDBG" file="$PROJECT_DIR$/tests/Feature/Http/Controllers/MarkdownAssetControllerTest.php" method="testCanStoreAnAsset" scope="XML" />
+    <method v="2" />
+  </configuration>
+</component>
